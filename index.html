@@ -15,16 +15,18 @@
 <body>
     <div class="container">
         <header>
-            <h1>ROCK PAPER SCISSORS!</h1>
+            <h1>ROCK-<span class="paper">PAPER</span>-<span class="scissors">SCISSORS</span>!</h1>
         </header>
+
 
         <!--game section-->
         <section class="game_content">
-            <i id="redo_icon" class="fas fa-redo"></i>
+            <div> <i id="redo_icon" class="fas fa-redo"></i></div>
+            <div class="btn"><i class="fas fa-home"></i></div>
 
             <div class="hands_icons">
                 <div>
-                    <p id="timer">let's decide!</p>
+                    <p id="timer">select a hand to play!</p>
                 </div>
                 <i class="far fa-hand-rock"></i>
                 <i class="far fa-hand-paper"></i>
@@ -34,8 +36,8 @@
             <!--players score info-->
             <div class="players_info">
                 <div id="players">
-                    <i class="fas fa-user-astronaut"></i>
-                    <i class="fas fa-keyboard"></i>
+                    <i class="fas fa-user-astronaut"><br> <span>player</span> </i>
+                    <i class="fas fa-keyboard"><br><span>computer</span> </i>
                 </div>
                 <div id="score">
                     <p id="user">0</p>
