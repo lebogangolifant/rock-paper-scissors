@@ -1,202 +1,186 @@
-/* resert */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-
-/* body */
-
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background: #000;
-    color: #fff;
-    line-height: normal;
-}
-
-
-/* container */
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 2rem;
-    text-align: center;
-}
-
-
-/* header */
-
-header {
-    margin: 1rem 0;
-}
-
-h1 {
-    color: #dd0747;
-    margin: 2rem 0 1rem 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-/* redo game icon */
-
-.fa-redo {
-    display: none;
-    cursor: pointer;
-    float: right;
-    border: none;
-    outline: none;
-    font-size: 1.3rem;
-    margin: -4rem 0 0 -8rem;
-}
-
-#redo_icon {
-    margin: -4rem 0;
-    padding: 0 8rem 0 0;
-}
-
-i.fa-redo:hover {
-    color: #dd0747;
-}
-
-
-/* game section */
-
-.hands_icons p {
-    font-size: 1.9rem;
-    color: #d4d4d4;
-    margin: 6rem 0 1.9rem 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.hands_icons {
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    font-size: 6rem;
-}
-
-.hands_icons i {
-    margin: 1rem 0 10rem 0;
-    padding: 0 3rem;
-    cursor: pointer;
-}
-
-.fa-hand-rock:hover {
-    color: #dd0747;
-}
-
-.fa-hand-paper:hover {
-    color: #4bdd07;
-}
-
-.fa-hand-scissors:hover {
-    color: #0799dd;
-}
-
-
-/* player score info */
-
-.players_info {
-    display: inline;
-    font-size: 2rem;
-}
-
-
-/* players select */
-
-#players i {
-    border: 3px solid #dd0747;
-    padding: 1rem;
-}
-
-.fa-user-astronaut {
-    float: left;
-    margin-left: 5rem;
-    color: #3ee415;
-}
-
-.fa-keyboard {
-    float: right;
-    margin-right: 5rem;
-    color: #0f82cf;
-}
-
-
-/* score */
-
-#score {
-    display: inline;
-}
-
-#user {
-    float: left;
-    margin: 1rem 0 0 2rem;
-    font-size: 3rem;
-}
-
-#computer {
-    float: right;
-    margin: 1rem 3rem 0 0;
-    font-size: 3rem;
-}
-
-
-/* modal */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background: rgba(145, 138, 140, 0.5);
-}
-
-.modal-content {
-    background: #fff;
-    text-align: center;
-    margin: 10% auto;
-    width: 350px;
-    border-radius: 10px;
-    padding: 3rem;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: 1s;
-}
-
-.modal-content h1 {
-    margin-bottom: 1rem;
-}
-
-.modal-content p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-@keyframes modalopen {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 700px) {
-    .choice {
-        font-size: 110px;
-    }
-}
-
-@media (max-width: 500px) {
-    .choice {
-        font-size: 80px;
-    }
-}
+ /* resert */
+ 
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ /* body */
+ 
+ body {
+     font-family: 'Courier New', Courier, monospace;
+     background: #000;
+     color: #fff;
+     line-height: normal;
+ }
+ /* container */
+ 
+ .container {
+     min-width: 1100px;
+     min-height: auto;
+     margin: auto;
+     text-align: center;
+ }
+ /* header */
+ 
+ header {
+     margin: 1rem 0;
+ }
+ 
+ h1 {
+     color: #dd0747;
+     margin: 2rem 0 1rem 0;
+     font-size: 2.5rem;
+     font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ .paper {
+     color: #3ee415;
+ }
+ 
+ .scissors {
+     color: #0799dd;
+ }
+ /* redo game icon */
+ 
+ .fa-redo {
+     cursor: pointer;
+     float: right;
+     font-size: 1.3rem;
+     margin: -1rem 0 0 -8rem;
+ }
+ 
+ #redo_icon {
+     padding: 2rem 18rem;
+ }
+ 
+ i.fa-redo:hover {
+     color: #dd0747;
+ }
+ /* home button */
+ 
+ .fa-home {
+     cursor: pointer;
+     font-size: 2rem;
+     margin: 2rem 0 0 30rem;
+ }
+ 
+ i.fa-home:hover {
+     color: #dd0747;
+ }
+ /* game section */
+ 
+ .hands_icons p {
+     font-size: 1.9rem;
+     color: #d4d4d4;
+     margin: 3.5rem 0 1.9rem 0;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .hands_icons {
+     display: block;
+     text-align: center;
+     cursor: pointer;
+     font-size: 6rem;
+ }
+ 
+ .hands_icons i {
+     margin: 1rem 0 10rem 0;
+     padding: 0 3rem;
+     cursor: pointer;
+ }
+ 
+ .fa-hand-rock:hover {
+     color: #dd0747;
+ }
+ 
+ .fa-hand-paper:hover {
+     color: #4bdd07;
+ }
+ 
+ .fa-hand-scissors:hover {
+     color: #0799dd;
+ }
+ /* player score info */
+ 
+ .players_info {
+     display: inline;
+     font-size: 2rem;
+ }
+ /* players select */
+ 
+ #players i {
+     padding: 1rem;
+     margin-top: -3rem;
+ }
+ 
+ .fa-user-astronaut {
+     float: left;
+     margin: 0 0 4rem 14rem;
+     color: #3ee415;
+ }
+ 
+ .fa-keyboard {
+     float: right;
+     margin-right: 14rem;
+     color: #0f82cf;
+ }
+ 
+ #players span {
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #fff;
+ }
+ /* score */
+ 
+ #score {
+     display: inline;
+ }
+ 
+ #user {
+     float: left;
+     margin: -2rem 0 0 3rem;
+     font-size: 3rem;
+     border-bottom: 3px solid #dd0747;
+ }
+ 
+ #computer {
+     float: right;
+     margin: -2rem 3rem 0 0;
+     font-size: 3rem;
+     border-bottom: 3px solid #dd0747;
+ }
+ /* modal */
+ 
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     overflow: auto;
+     background: rgba(145, 138, 140, 0.5);
+ }
+ 
+ .modal-content {
+     background: #fff;
+     text-align: center;
+     margin: 10% auto;
+     width: 350px;
+     border-radius: 10px;
+     padding: 3rem;
+     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+     animation-name: modalopen;
+     animation-duration: 1s;
+ }
+ 
+ .modal-content h1 {
+     margin-bottom: 1rem;
+ }
+ 
+ .modal-content p {
+     font-size: 1.2rem;
+     margin-top: 1rem;
+ }
