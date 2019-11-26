@@ -25,11 +25,21 @@
 
         <!--game section-->
         <section class="game-content">
-            <div> <i id="redo-icon" class="fas fa-redo"></i></div>
+            <!--<div> <i id="redo-icon" class="fas fa-redo"></i></div> -->
             <div class="btn">
                 <a href="home.html"><i class="fas fa-home"></i></a></div>
             <div>
-                <p>select a hand to play!</p>
+                <p>human vs computer! <small></small></p>
+            </div>
+
+            <!--players score info-->
+            <div class="players-score">
+                <div id="players">
+                    <i class="fas fa-user"><br> <span>user</span> </i>
+                    <i class="fas fa-keyboard"><br><span>computer</span> </i>
+                </div>
+
+                <span id="user">0</span><span id="computer">0</span>
             </div>
 
             <!--choices-->
@@ -38,26 +48,11 @@
                 <i id="paper" class="choice far fa-hand-paper"></i>
                 <i id="scissors" class="choice far fa-hand-scissors"></i>
             </div>
-
-            <!--players score info-->
-            <div class="players-score">
-                <div id="players">
-                    <i class="fas fa-user-astronaut"><br> <span>player</span> </i>
-                    <i class="fas fa-keyboard"><br><span>computer</span> </i>
-                </div>
-
-                <span id="user">0</span><span id="computer">0</span>
-
-
-            </div>
             <!--results-->
             <div class="results">
-                <p>Choose !!</p>
+                <p></p>
             </div>
-
         </section>
-
-
     </div>
 </body>
 <script src="app.js"></script>

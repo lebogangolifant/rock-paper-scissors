@@ -42,8 +42,7 @@
      color: #0799dd;
  }
  /* redo game icon */
- 
- .fa-redo {
+ /*.fa-redo {
      cursor: pointer;
      float: right;
      font-size: 1.3rem;
@@ -57,13 +56,14 @@
  i.fa-redo:hover {
      color: #dd0747;
  }
+ 
  /* home button */
  
  .fa-home {
      cursor: pointer;
      color: #fff;
      font-size: 2rem;
-     margin: 2rem 0 0 30rem;
+     margin: 2rem 0 0 0;
  }
  
  i.fa-home:hover {
@@ -75,7 +75,7 @@
      font-size: 1.5rem;
      color: #d4d4d4;
      margin: 3rem 0 1.9rem 0;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: 'Courier New', Courier, monospace;
  }
  
  .choices {
@@ -86,8 +86,8 @@
  }
  
  .choices i {
-     margin: 1rem 0 10rem 0;
-     padding: 0 3rem;
+     margin: 6rem 0 10rem 0;
+     padding: 0 1rem;
      cursor: pointer;
  }
  
@@ -115,7 +115,7 @@
      margin-top: -3rem;
  }
  
- .fa-user-astronaut {
+ .fa-user {
      float: left;
      margin: 0 0 4rem 14rem;
      color: #3ee415;
@@ -140,28 +140,26 @@
  
  #user {
      float: left;
-     margin: -2.5rem 0 0 3rem;
-     font-size: 3rem;
+     margin: -2rem 0 0 3rem;
+     font-size: 2.5rem;
      border-bottom: 3px solid #dd0747;
  }
  
  #computer {
      float: right;
-     margin: -2.5rem 3rem 0 0;
-     font-size: 3rem;
+     margin: -2rem 3rem 0 0;
+     font-size: 2.5rem;
      border-bottom: 3px solid #dd0747;
  }
  /* results */
  
- .results {
-     margin: 3rem 20rem 0 0;
- }
- 
  .results>p {
-     font-family: 'Courier New', Courier, monospace;
+     font-family: Arial, Helvetica, sans-serif;
      text-align: center;
      font-size: 1.5rem;
+     color: #fff;
      letter-spacing: 2px;
+     margin: -6rem 0 0 0;
  }
  /* homepage style */
  /* game instructions*/
