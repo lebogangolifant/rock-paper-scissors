@@ -14,27 +14,33 @@
 
 <body>
     <div class="container">
+        <!--header-->
         <header>
-            <h1>ROCK-<span class="paper">PAPER</span>-<span class="scissors">SCISSORS</span>!</h1>
+            <h1>ROCK -<span class="paper">
+                PAPER</span> -
+                <span class="scissors">
+                    SCISSORS</span>!
+            </h1>
         </header>
 
-
         <!--game section-->
-        <section class="game_content">
-            <div> <i id="redo_icon" class="fas fa-redo"></i></div>
-            <div class="btn"><i class="fas fa-home"></i></div>
+        <section class="game-content">
+            <div> <i id="redo-icon" class="fas fa-redo"></i></div>
+            <div class="btn">
+                <a href="home.html"><i class="fas fa-home"></i></a></div>
+            <div>
+                <p>select a hand to play!</p>
+            </div>
 
-            <div class="hands_icons">
-                <div>
-                    <p id="timer">select a hand to play!</p>
-                </div>
-                <i class="far fa-hand-rock"></i>
-                <i class="far fa-hand-paper"></i>
-                <i class="far fa-hand-scissors"></i>
+            <!--choices-->
+            <div class="hands-icons">
+                <i id="rock" class="hand far fa-hand-rock"></i>
+                <i id="paper" class="hand far fa-hand-paper"></i>
+                <i id="scissors" class="hand far fa-hand-scissors"></i>
             </div>
 
             <!--players score info-->
-            <div class="players_info">
+            <div class="players-info">
                 <div id="players">
                     <i class="fas fa-user-astronaut"><br> <span>player</span> </i>
                     <i class="fas fa-keyboard"><br><span>computer</span> </i>
@@ -43,15 +49,17 @@
                     <p id="user">0</p>
                     <p id="computer">0</p>
                 </div>
+                <!--results-->
+                <div class="playersResults">
+                    <p>Choose !!</p>
+                </div>
             </div>
-        </section>
-
-        <!--game modal-->
-        <section class="modal">
-            <div id="modal_content" class="player_results"></div>
 
         </section>
+
+
     </div>
 </body>
+<script src="app.js"></script>
 
 </html>
