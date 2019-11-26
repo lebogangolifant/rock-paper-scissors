@@ -1,6 +1,4 @@
-// html structure: redo icon,choices,players score/score
-
-// get game var cash the Dom-sstore datafor future use
+// get DOM elements
 let userScore = 0;
 let computerScore = 0;
 // html store DOM var 'show results on html page'
