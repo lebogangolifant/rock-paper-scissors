@@ -10,7 +10,7 @@ const scissors_i = document.getElementById("scissors"); //choice
 const userScore_span = document.getElementById("user"); //score
 const computerScore_span = document.getElementById("computer"); //score
 const playersScore_div = document.querySelector(".players-score"); //score div
-const results_div = document.querySelector(".result");
+const results_p = document.querySelector(".results > p");
 
 //computer play
 computerPlay = () => {
@@ -20,15 +20,29 @@ computerPlay = () => {
 }
 
 //results
-win = (userp, computerp) => {
+win = (userSelection, computerSelection) => {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
+    //show result message
+    results_p.innerHTML = `${userSelection}   beats   ${computerSelection}. You win! 💪`;
 }
 
-lose = () => {}
+lose = (userSelection, computerSelection) => {
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    //show result message
+    results_p.innerHTML = `${userSelection}   loses to   ${computerSelection}. You lost! 🙃`;
+}
 
-draw = () => {}
+draw = (userSelection, computerSelection) => {
+    //userScore++;
+    //userScore_span.innerHTML = userScore;
+    //computerScore_span.innerHTML = computerScore;
+    //show result message
+    results_p.innerHTML = `${userSelection}   equals   ${computerSelection}. Its a draw! 🙄 🤖`;
+}
 
 // computer play against user
 game = (userSelection) => {
@@ -38,38 +52,27 @@ game = (userSelection) => {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-            win(userSelection + computerSelection);
+            win(userSelection, computerSelection);
             break;
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-            lose(userSelection + computerSelection);
+            lose(userSelection, computerSelection);
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
-            draw(userSelection + computerSelection);
+            draw(userSelection, computerSelection);
             break;
-
-
-
     }
 }
 
 // game play fuction
 main = () => {
     // add event listner to choices
-    rock_i.addEventListener('click', function() {
-        game("rock"); //function 
-    })
-
-    paper_i.addEventListener('click', function() {
-        game("paper"); //function
-    })
-
-    scissors_i.addEventListener('click', function() {
-        game("scissors"); //function
-    })
+    rock_i.addEventListener('click', () => game("rock")); //function 
+    paper_i.addEventListener('click', () => game("paper")); //function
+    scissors_i.addEventListener('click', () => game("scissors")); //function
 }
 
 main();
